@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>High Flyers Christian Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<nav class="navbar">
+    <div class="logo">HIGH FLYERS</div>
+    <ul class="nav-links">
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#mentorship">Mentorship</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#donate" class="give-link">Give</a></li>
+    </ul>
+    <div class="nav-actions">
+        <button class="btn-outline">Login</button>
+        <button class="btn-primary">Join Now</button>
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Raise Leaders. Strengthen Families. Transform Nations.</h1>
+        <p>Elite Christian leadership development platform.</p>
+        <div class="hero-buttons">
+            <button class="btn-gold">Become a High Flyer</button>
+            <button class="btn-outline-light">Explore Programs</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TRUST SECTION ================= -->
+<section class="stats">
+    <div class="stat">
+        <h2>1,200+</h2>
+        <p>Members</p>
+    </div>
+    <div class="stat">
+        <h2>75+</h2>
+        <p>Mentors</p>
+    </div>
+    <div class="stat">
+        <h2>20+</h2>
+        <p>Courses</p>
+    </div>
+</section>
+
+<!-- ================= PROGRAMS ================= -->
+<section id="programs" class="programs">
+    <h2 class="section-title">Our Core Pillars</h2>
+    <div class="program-grid">
+        <div class="program-card">
+            <h3>Leadership Academy</h3>
+            <p>Structured leadership growth path.</p>
+            <button class="btn-primary-small">Learn More</button>
+        </div>
+        <div class="program-card">
+            <h3>Mentorship Circle</h3>
+            <p>Personal guidance from experienced leaders.</p>
+            <button class="btn-primary-small">Connect</button>
+        </div>
+        <div class="program-card">
+            <h3>Spiritual Growth</h3>
+            <p>Prayer wall and devotionals.</p>
+            <button class="btn-primary-small" onclick="openModal()">Post Prayer</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DONATION ================= -->
+<section id="donate" class="donation">
+    <h2>Fund the Next Generation of Christian Leaders</h2>
+    <p>₦<span id="donationAmount">1500</span> raised of ₦5000 goal</p>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="donationBar"></div>
+    </div>
+
+    <button class="btn-gold" onclick="updateDonation(500)">Donate ₦500</button>
+</section>
+
+<!-- ================= DASHBOARD ================= -->
+<section class="dashboard">
+    <aside class="sidebar">
+        <h3>Dashboard</h3>
+        <ul>
+            <li>My Courses</li>
+            <li>Mentorship</li>
+            <li>Community</li>
+            <li>Prayer Wall</li>
+            <li>Settings</li>
+        </ul>
+    </aside>
+
+    <main class="dashboard-content">
+        <h2>Welcome Back, Flyer</h2>
+
+        <div class="dashboard-cards">
+            <div class="card-large">
+                <h3>Your Growth Journey</h3>
+                <p>Leadership 101 - 45% Complete</p>
+                <div class="progress-container">
+                    <div class="progress-bar" style="width:45%"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Next Mentor Session</h3>
+                <p>Thursday 4PM</p>
+            </div>
+
+            <div class="card">
+                <h3>Community Activity</h3>
+                <p>12 new prayer requests</p>
+            </div>
+        </div>
+    </main>
+</section>
+
+<!-- ================= MODAL ================= -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+        <h3>Post Prayer Request</h3>
+        <textarea placeholder="Write your request..."></textarea>
+        <button class="btn-primary-small" onclick="closeModal()">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>
